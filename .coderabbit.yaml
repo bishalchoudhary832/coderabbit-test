@@ -1,0 +1,31 @@
+# .coderabbit.yaml (Free Plan Config)
+version: 2
+
+reviews:
+  enabled: true
+  auto_review: true
+
+  # Free plan limits
+  max_files_per_review: 10
+  max_comments_per_review: 20
+
+  # React-specific settings
+  path_filters:
+    include:
+      - "src/**/*.{js,jsx,ts,tsx}"
+      - "components/**/*"
+      - "hooks/**/*"
+      - "utils/**/*"
+    exclude:
+      - "node_modules/**"
+      - "dist/**"
+      - "build/**"
+      - "*.test.*"
+      - "*.spec.*"
+
+chat:
+  enabled: false # Free plan doesn't include chat
+
+summaries:
+  enabled: true
+  auto_summarize: true
